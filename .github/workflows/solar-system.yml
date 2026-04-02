@@ -57,6 +57,8 @@ jobs:
         path: coverage
         retention-days: 5 
     docker:
+      permissions:
+        write: true
       runs-on: ubuntu-latest
       steps:
       - name: Checkout Repository
